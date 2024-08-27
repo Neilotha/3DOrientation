@@ -7,18 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		427604AC29D46DFC0007DA3B /* OrientationSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427604AB29D46DFC0007DA3B /* OrientationSession.swift */; };
 		429D080C29C840C8002A9B74 /* _DOrientationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429D080B29C840C8002A9B74 /* _DOrientationApp.swift */; };
 		429D080E29C840C8002A9B74 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429D080D29C840C8002A9B74 /* ContentView.swift */; };
 		429D081029C840CA002A9B74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 429D080F29C840CA002A9B74 /* Assets.xcassets */; };
 		429D081329C840CA002A9B74 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 429D081229C840CA002A9B74 /* Preview Assets.xcassets */; };
+		429D081A29C857EA002A9B74 /* OrientaionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429D081929C857EA002A9B74 /* OrientaionModel.swift */; };
+		42E59CBD29CAE80E00901873 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E59CBC29CAE80E00901873 /* Matrix.swift */; };
+		42E59CBF29CAEB6F00901873 /* KalmanFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E59CBE29CAEB6F00901873 /* KalmanFilter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		427604AB29D46DFC0007DA3B /* OrientationSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationSession.swift; sourceTree = "<group>"; };
+		427604CC29D583F60007DA3B /* -DOrientation-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "-DOrientation-Info.plist"; sourceTree = SOURCE_ROOT; };
 		429D080829C840C8002A9B74 /* 3DOrientation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 3DOrientation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		429D080B29C840C8002A9B74 /* _DOrientationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _DOrientationApp.swift; sourceTree = "<group>"; };
 		429D080D29C840C8002A9B74 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		429D080F29C840CA002A9B74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		429D081229C840CA002A9B74 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		429D081929C857EA002A9B74 /* OrientaionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientaionModel.swift; sourceTree = "<group>"; };
+		42E59CBC29CAE80E00901873 /* Matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
+		42E59CBE29CAEB6F00901873 /* KalmanFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KalmanFilter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +60,10 @@
 		429D080A29C840C8002A9B74 /* 3DOrientation */ = {
 			isa = PBXGroup;
 			children = (
+				427604CC29D583F60007DA3B /* -DOrientation-Info.plist */,
 				429D080B29C840C8002A9B74 /* _DOrientationApp.swift */,
 				429D080D29C840C8002A9B74 /* ContentView.swift */,
+				429D081D29C86335002A9B74 /* Model */,
 				429D080F29C840CA002A9B74 /* Assets.xcassets */,
 				429D081129C840CA002A9B74 /* Preview Content */,
 			);
@@ -65,6 +76,17 @@
 				429D081229C840CA002A9B74 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		429D081D29C86335002A9B74 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				429D081929C857EA002A9B74 /* OrientaionModel.swift */,
+				42E59CBE29CAEB6F00901873 /* KalmanFilter.swift */,
+				42E59CBC29CAE80E00901873 /* Matrix.swift */,
+				427604AB29D46DFC0007DA3B /* OrientationSession.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42E59CBD29CAE80E00901873 /* Matrix.swift in Sources */,
+				429D081A29C857EA002A9B74 /* OrientaionModel.swift in Sources */,
+				42E59CBF29CAEB6F00901873 /* KalmanFilter.swift in Sources */,
+				427604AC29D46DFC0007DA3B /* OrientationSession.swift in Sources */,
 				429D080E29C840C8002A9B74 /* ContentView.swift in Sources */,
 				429D080C29C840C8002A9B74 /* _DOrientationApp.swift in Sources */,
 			);
@@ -270,6 +296,8 @@
 				DEVELOPMENT_TEAM = WU68PVHKZ9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "-DOrientation-Info.plist";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Send orientation data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +327,8 @@
 				DEVELOPMENT_TEAM = WU68PVHKZ9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "-DOrientation-Info.plist";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Send orientation data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
